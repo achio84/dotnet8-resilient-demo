@@ -1,0 +1,6 @@
+@ResilienceDemoApp_HostAddress = http://localhost:5285
+
+GET {{ResilienceDemoApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
