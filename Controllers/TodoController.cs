@@ -18,7 +18,7 @@ namespace ResilienceDemoApp.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var todo = await _todoService.GetTodoById(id);
+            var todo = await _todoService.GetTodoByIdV3(id);
             return Ok(todo);
         }
     }
