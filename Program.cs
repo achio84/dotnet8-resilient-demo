@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddSingleton<TodoService>();
+builder.Services.AddScope<TodoService>();
 builder.Services.AddHttpClient<TodoService>().AddResilienceHandler("jong", x =>
 {
     x.AddRetry(new RetryStrategyOptions<HttpResponseMessage>
